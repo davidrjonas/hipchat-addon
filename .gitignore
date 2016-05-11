@@ -1,0 +1,7 @@
+hipchat-sensu-addon
+.DS_Store
+/bin
+/vendor
+/dist
+.*.swp
+

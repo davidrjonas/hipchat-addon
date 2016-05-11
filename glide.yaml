@@ -1,0 +1,8 @@
+package: github.com/davidrjonas/hipchat-addon
+license: MIT
+owners:
+- name: David Jonas
+  email: djonas@noip.com
+import:
+- package: github.com/dgrijalva/jwt-go
+- package: github.com/jmoiron/jsonq
