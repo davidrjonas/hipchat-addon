@@ -129,7 +129,7 @@ func JsonLogger(handler http.Handler, logger AddonLogger) http.Handler {
 			Headers:    r.Header,
 		})
 
-		logger.Info(b[:])
+		logger.Info(string(b[:]))
 
 		handler.ServeHTTP(w, r)
 	})
