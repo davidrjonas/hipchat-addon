@@ -129,11 +129,23 @@ Todos and Known Issues
 ----------------------
 
 - [ ] Safe Installation Access. Right now it is actually unsafe to access Installation that have been looked up from the InstallationStore. I haven't decided whether to return a copy or enforce locking semantics. Advice appreciated.
-- [ ] Implement uninstallCallback to stop uninstallations
+- [ ] Test all the units
 - [ ] Implement Admin Page Handler
 - [ ] Implement Actions
 - [ ] Implement Dialogs
 - [ ] Implement External Pages
 - [ ] Implement WebPanel
-- [ ] Test all the units
+- [ ] Implement Card-style Notifications
+- [ ] Go 1.7 http context for parsed jwt
+- [ ] Research and correct room-specific UpdateGlanceData()
+- [ ] Add Glance example / docs
+- [ ] Implement uninstallCallback to stop uninstallations
+
+Thanks
+------
+
+Thanks to the Go authors and the awesome package maintainers that made this easier.
+
+- https://github.com/dgrijalva/jwt-go
+- https://github.com/jmoiron/jsonq
 
