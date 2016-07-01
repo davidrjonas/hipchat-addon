@@ -49,7 +49,7 @@ func mustReadFile(filename string) InstallationMap {
 
 func (s *FileInstallationStore) write() {
 
-	tmpfile, err := ioutil.TempFile("", s.stateFilename)
+	tmpfile, err := ioutil.TempFile("", "state")
 
 	if err != nil {
 		panic(err)
