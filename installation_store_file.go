@@ -5,6 +5,7 @@ import (
 	"io"
 	"io/ioutil"
 	"os"
+	"path"
 	"sync"
 )
 
@@ -49,7 +50,9 @@ func mustReadFile(filename string) InstallationMap {
 
 func (s *FileInstallationStore) write() {
 
-	tmpfile, err := ioutil.TempFile("", "state")
+	dir, _ := path.Split(s.stateFilename)
+
+	tmpfile, err := ioutil.TempFile(dir, "state")
 
 	if err != nil {
 		panic(err)
